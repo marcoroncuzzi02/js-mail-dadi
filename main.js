@@ -60,8 +60,23 @@ if (mailTrovata == true){
 else if (mailTrovata == false){
     console.log("non sei tra gli invitati")
 }
+
 // Gioco dei dadi
 
+let numeroGiocatore = Math.floor((Math.random() * 6) + 1);
+let numeroComputer = Math.floor((Math.random() * 6) + 1);
+console.log(numeroGiocatore)
+console.log(numeroComputer)
+
+if (numeroGiocatore < numeroComputer) {
+    console.log(`${numeroComputer} è il vincitore`)
+} 
+else if (numeroComputer < numeroGiocatore) {
+    console.log(`${numeroGiocatore} è il vincitore`)
+} 
+else{
+    console.log(`i numeri sono uguali`)
+}
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 // Prima di partire a scrivere codice poniamoci qualche domanda:
@@ -73,3 +88,4 @@ else if (mailTrovata == false){
 // 3. si ma noi cosa vogliamo fare?
 // 4. torniamo a scrivere in italiano
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
